@@ -1,1 +1,302 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+
+body, html {
+  height: 100%;
+}
+
+
+body{
+  font-size: 13px;
+  line-height: 1;
+  color: #797979;
+  position: relative;
+  font-family: microsoft yahei,Open Sans,helvetica neue,hiragino sans gb,arial,sans-serif;
+  background: url(assets/main/bg3.jpg) repeat rgba(9, 52, 110, 1);
+  /*opacity: 0.5;*/
+  background-size: cover;
+}
+a{color: #999eb1;}
+
+.font-600, b, strong {
+  font-weight: 600
+}
+
+.arrow-dropdown-menu:after, .arrow-dropdown-menu:before {
+  content: '';
+  position: absolute
+}
+
+.vertical-middle, .waves-effect {
+  vertical-align: middle
+}
+
+.icon-list-demo div, .text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.font-secondary, .h1, .h2, .h3, .h4, .h5, .h6, .label, b, h1, h2, h3, h4, h5, h6, strong {
+  font-family: microsoft yahei,Open Sans,'Hind Madurai', sans-serif
+}
+
+html {
+  position: relative;
+  min-height: 100%
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #505458;
+  margin: 10px 0
+}
+
+h5 {
+  font-size: 15px
+}
+
+p {
+  line-height: 1.4
+}
+
+* {
+  outline: 0 !important
+}
+
+a:active, a:focus, a:hover {
+  outline: 0;
+  text-decoration: none
+}
+
+.container {
+  width: auto
+}
+
+.wrapper, .text-overflow {
+  width: 100%;
+  overflow: hidden
+}
+
+
+.wrapper {
+  height: 100%
+}
+
+.p-0 {
+  padding: 0 !important
+}
+
+.p-20 {
+  padding: 20px !important
+}
+
+.p-30 {
+  padding: 30px !important
+}
+
+.p-l-0 {
+  padding-left: 0 !important
+}
+
+.p-r-0 {
+  padding-right: 0 !important
+}
+
+.p-t-0 {
+  padding-top: 0 !important
+}
+
+.p-b-0 {
+  padding-bottom: 0 !important
+}
+
+.p-t-10 {
+  padding-top: 10px !important
+}
+
+.p-b-10 {
+  padding-bottom: 10px !important
+}
+
+.p-l-r-10 {
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.card-box, .wrapper-md {
+  padding: 20px
+}
+
+.m-0 {
+  margin: 0 !important
+}
+
+.m-r-5 {
+  margin-right: 5px !important
+}
+
+.m-r-10 {
+  margin-right: 10px !important
+}
+
+.m-r-15 {
+  margin-right: 15px !important
+}
+
+.m-l-5 {
+  margin-left: 5px !important
+}
+
+.m-l-10 {
+  margin-left: 10px !important
+}
+
+.m-l-15 {
+  margin-left: 15px !important
+}
+
+.m-t-5 {
+  margin-top: 5px !important
+}
+
+.m-t-0 {
+  margin-top: 0 !important
+}
+
+.m-t-10 {
+  margin-top: 10px !important
+}
+
+.m-t-15 {
+  margin-top: 15px !important
+}
+
+.m-t-20 {
+  margin-top: 20px !important
+}
+
+.m-t-30 {
+  margin-top: 30px !important
+}
+
+.m-t-40 {
+  margin-top: 40px !important
+}
+
+.m-t-50 {
+  margin-top: 50px !important
+}
+
+.m-b-0 {
+  margin-bottom: 0 !important
+}
+
+.m-b-5 {
+  margin-bottom: 5px !important
+}
+
+.m-b-10 {
+  margin-bottom: 10px !important
+}
+
+.m-b-15 {
+  margin-bottom: 15px !important
+}
+
+.m-b-20 {
+  margin-bottom: 20px !important
+}
+
+.m-b-25 {
+  margin-bottom: 25px !important
+}
+
+.m-b-30 {
+  margin-bottom: 30px !important
+}
+
+.w-xs {
+  min-width: 80px
+}
+
+.w-sm {
+  min-width: 95px
+}
+
+.w-md {
+  min-width: 110px
+}
+
+.w-lg {
+  min-width: 140px
+}
+
+.center-page {
+  float: none !important;
+  margin: 0 auto !important
+}
+
+.text-overflow {
+  display: block
+}
+
+.font-normal {
+  font-weight: 400
+}
+
+.font-light {
+  font-weight: 300
+}
+
+.font-13 {
+  font-size: 13px !important
+}
+
+.pull-in {
+  margin-left: -20px;
+  margin-right: -20px
+}
+
+.b-0 {
+  border: none !important
+}
+
+.bx-shadow {
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1)
+}
+
+.bx-shadow-none, .search-box .btn-search {
+  box-shadow: none !important
+}
+
+
+
+
+.header-title {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+/* Table colored */
+.table-colored thead th {
+  color: #fff;
+}
+/* Table colored-bordered */
+.table-colored-bordered thead th {
+  border-bottom: 0 !important;
+  color: #fff;
+}
+.table-colored-bordered {
+  border: 2px solid #188ae2;
+}
+.table-colored-bordered thead th {
+  background-color: #188ae2;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  border-top: 1px solid #ddd;
+}

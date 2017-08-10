@@ -1,0 +1,6 @@
+{
+  "/master":{
+    "target":"http://10.4.106.7:808gu9",
+    "pathRewrite": {"^/master" : "/"}
+  }
+}

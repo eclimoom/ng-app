@@ -1,0 +1,26 @@
+.navbar-inverse{border-radius: 0;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+0px 0px 20px rgba(0,0,0,0.1) inset;
+
+  /*background-color: transparent;*/
+  /*border-color: transparent;*/
+}
+
+nav.navbar-inverse::before,
+nav.navbar-inverse::after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:15px;
+  left:10px;
+  width:50%;
+  height:20%;
+  box-shadow:0 2px 20px 14px rgba(0, 0, 0, 0.7);
+  transform:rotate(-3deg);
+}
+
+nav.navbar-inverse::after{
+  right:10px;
+  left:auto;
+  transform:rotate(3deg);
+}
