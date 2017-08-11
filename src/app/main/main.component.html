@@ -10,8 +10,8 @@
           </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>td</td>
+          <tr *ngFor="let c of compareList">
+            <td>{{c.name}}</td>
           </tr>
           </tbody>
         </table>

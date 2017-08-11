@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Compare} from "../compare/model/compare";
 import {CompareService} from "../compare/service/compare.service";
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -25,12 +26,18 @@ export class MainComponent implements OnInit {
   public loadDate(){
 
 
-    return this.compareService.getCompareList(1).subscribe(
+    return this.compareService.getCompareList(1)
+
+      .subscribe(
       res=>{
         this.compareList = res['data']
       },
-      error=>{console.log(error)},
-      ()=>{console.log("complete")}
+      error=>{
+        console.log(error,error.status,error.statusText)
+      },
+      ()=>{
+        console.log("complete")
+      }
     )
   }
 

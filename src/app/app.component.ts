@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
+import {NavigatorService} from "./core/navigator.service";
 
 
 @Component({
@@ -6,10 +7,21 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
 
+  showNavigation: boolean = true;
 
-  title = "hello world";
+  constructor(private navigatorService: NavigatorService) { }
+
+  ngOnInit() {
+    this.navigatorService.displayNavigation
+      .subscribe(res => this.showNavigation = res);
+  }
+  //  button click event
+  toggleNav() {
+    this.navigatorService.displayNavigation
+      .subscribe(res => this.showNavigation = res);
+  }
 
 }
